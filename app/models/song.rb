@@ -22,9 +22,9 @@ class Song < ActiveRecord::Base
     
     def note_contents=(note_contents)
       note.contents.each do |content| 
-      unless content.empty?
-      self.notes << Note.create(content: content)
-      self.save 
+        unless content.empty?
+        self.notes << Note.create(content: content)
+        self.save 
       end 
     end 
       
