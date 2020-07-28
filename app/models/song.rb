@@ -25,7 +25,7 @@ class Song < ActiveRecord::Base
         unless content.empty?
       self.notes << Note.create(content: content)
       self.save 
+      end 
     end 
-  end 
       
 end
